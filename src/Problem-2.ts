@@ -1,4 +1,3 @@
-//[1, 2, 2, 3, 4, 4, 5]
 const removeDuplicates = (numArray: number[]): number[] => {
   const uniqueArr: number[] = [];
 
@@ -11,4 +10,4 @@ const removeDuplicates = (numArray: number[]): number[] => {
   return uniqueArr;
 };
 
-console.log(removeDuplicates([1, 1, 1, 1, 1]));
+// console.log(removeDuplicates([1, 1, 1, 1, 1]));

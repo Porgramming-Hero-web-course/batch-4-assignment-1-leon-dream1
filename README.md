@@ -27,8 +27,8 @@ It check primitive type like string, number , boolean and based on type we perfo
 ```
 
 
-# 1. instanceof :
-This is used for check if a object is belong or instance of a class or not 
+# 2. instanceof :
+This is used for check if a object is belong or instance of a class or not .
 
 ```
 class Dog {
@@ -46,3 +46,20 @@ function handlePet(pet: Dog | string) {
 }
 ```
 
+# 3. in :
+This is used for check if a property exists on an object or not.
+
+```
+type user = { name: string };
+type userAccount = { ID: number };
+
+function processProperties(obj: user | userAccount) {
+  if ("name" in obj) {
+    console.log("User name:", obj.name);
+  } else {
+    console.log("Account ID:", obj.ID);
+  }
+}
+```
+
+# 4. 

@@ -93,3 +93,5 @@ Use case of type guard :
 - Error Prevent: We can decrease run time error using this type guard.
 - Readability: Type guard make code easy to read for visitor and programmer.
 
+
+Type guards is the backbone of safe type manipulation in Typescript. We should use it in our daily project to write error free , clean and readable code. 

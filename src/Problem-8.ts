@@ -12,5 +12,7 @@ const validateKeys = <T extends Record<string, any>>(
   return valid;
 };
 
+
+
 //   const person = { name: "", age: 25, email: "alice@example.com" };
 //   console.log(validateKeys(person, ["name", "age", "ami"]));

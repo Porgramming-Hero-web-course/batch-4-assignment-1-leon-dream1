@@ -62,4 +62,34 @@ function processProperties(obj: user | userAccount) {
 }
 ```
 
-# 4. 
+# 4. Custom type: 
+Here function is responsible for check the type or act as a guards. we pass the entity to function for type guard , function tell us it is valid or not.
+
+```
+interface Teacher {
+  teach: () => void;
+}
+
+interface Doctor {
+  treat: () => void;
+}
+
+function isTeacher(user: any): user is Teacher {
+  return user && typeof user.teach === "function";
+}
+
+function handleUser(user: Teacher | Doctor) {
+  if (isTeacher(user)) {
+    user.teach();
+  } else {
+    user.treat();
+  }
+}
+
+```
+
+Use case of type guard : 
+- Dynamic API: When we fetch data from external source we don't sure what type of data will come. we can use type guard to valid data type before any operation
+- Error Prevent: We can decrease run time error using this type guard.
+- Readability: Type guard make code easy to read for visitor and programmer.
+

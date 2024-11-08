@@ -8,7 +8,7 @@ In Typescript , type guards is essential to validate the type in the runtime. It
 
 There are mainly 4 type of guards:
 - typeof
--instanceof
+- instanceof
 - in
 - value is Type
 
@@ -24,5 +24,25 @@ It check primitive type like string, number , boolean and based on type we perfo
     return parseInt(num) * 2;
    }
   }
+```
+
+
+# 1. instanceof :
+This is used for check if a object is belong or instance of a class or not 
+
+```
+class Dog {
+  bark() {
+    console.log("Woof!");
+  }
+}
+
+function handlePet(pet: Dog | string) {
+  if (pet instanceof Dog) {
+    pet.bark();
+  } else {
+    console.log("Pet's name:", pet);
+  }
+}
 ```
 

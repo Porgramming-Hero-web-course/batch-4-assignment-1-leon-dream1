@@ -10,4 +10,5 @@ class Car {
     }
 }
 const car = new Car("Honda", "Civic", 2024);
-console.log(car.getCarAge());
+car.getCarAge();
+// console.log(car.getCarAge());
